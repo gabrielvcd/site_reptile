@@ -1,0 +1,23 @@
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 48px;
+    color: rgb(4, 8, 10);
+}
+body{
+    background-color: #050052ab;
+}
+
+h2{
+    color: #255e1dfb;
+}
+
+.classmaster{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 255, 21);
+    font-size: 25px;
+}
+
+#color_title{
+    color: rgb(0, 255, 21);
+}
+
