@@ -14,7 +14,7 @@
     "@mdi/js": "^7.4.47",
     "core-js": "^3.37.1",
     "roboto-fontface": "*",
-    "vue": "^3.4.31",
+    "vue": "^3.4.36",
     "vuetify": "^3.6.11"
   },
   "devDependencies": {
