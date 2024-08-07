@@ -51,12 +51,20 @@
         <v-list nav>
           <v-list-item prepend-icon="mdi-home" title="Inicio" value="home"></v-list-item>
           <v-list-item prepend-icon="mdi-account" title="Login/Registro" value="Register"></v-list-item>
-          <v-list-item value="Reptile">
+          <v-list-item title="Répteis" value="Reptile" >
+            <template v-slot:prepend>
+              <svg-icon type="mdi" :path="path" class="icon"></svg-icon>
+
+            </template>
+          </v-list-item>
+
+           <!-- <v-list-item value="Reptile">
             <div class="item-prepend">
               <svg-icon type="mdi" :path="path" class="icon"></svg-icon>
               <v-list-item-title class="item-title">Répteis</v-list-item-title>
             </div>
-          </v-list-item>
+          </v-list-item> -->
+           
           <v-list-item prepend-icon="mdi-clock-start" title="Agende" value="travels"></v-list-item>
           <v-list-item prepend-icon="mdi-email" title="Sobre nós" value="about_us"></v-list-item>
         </v-list>
