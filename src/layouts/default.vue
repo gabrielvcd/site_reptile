@@ -57,6 +57,15 @@
             </template>
           </v-list-item>
 
+          
+          <v-list-item title="Inicio" value="home" >
+            <template v-slot:prepend>
+              <svg-icon type="mdi" :path="icohom" class="icon"></svg-icon>
+  
+            </template>
+          </v-list-item>
+
+
           <v-list-item title="Login/Registro" value="Register" >
             <template v-slot:prepend>
               <svg-icon type="mdi" :path="icolog" class="icon"></svg-icon>
