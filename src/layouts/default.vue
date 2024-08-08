@@ -49,24 +49,49 @@
         permanent
       >
         <v-list nav>
-          <v-list-item prepend-icon="mdi-home" title="Inicio" value="home"></v-list-item>
-          <v-list-item prepend-icon="mdi-account" title="Login/Registro" value="Register"></v-list-item>
-          <v-list-item title="Répteis" value="Reptile" >
-            <template v-slot:prepend>
-              <svg-icon type="mdi" :path="path" class="icon"></svg-icon>
 
+          <v-list-item title="Inicio" value="home" >
+            <template v-slot:prepend>
+              <svg-icon type="mdi" :path="icohom" class="icon"></svg-icon>
+  
             </template>
           </v-list-item>
 
-           <!-- <v-list-item value="Reptile">
-            <div class="item-prepend">
-              <svg-icon type="mdi" :path="path" class="icon"></svg-icon>
-              <v-list-item-title class="item-title">Répteis</v-list-item-title>
-            </div>
-          </v-list-item> -->
-           
-          <v-list-item prepend-icon="mdi-clock-start" title="Agende" value="travels"></v-list-item>
-          <v-list-item prepend-icon="mdi-email" title="Sobre nós" value="about_us"></v-list-item>
+          <v-list-item title="Login/Registro" value="Register" >
+            <template v-slot:prepend>
+              <svg-icon type="mdi" :path="icolog" class="icon"></svg-icon>
+  
+            </template>
+          </v-list-item>  
+
+          <v-list-item title="Répteis" value="Reptile" >
+            <template v-slot:prepend>
+              <svg-icon type="mdi" :path="icosch" class="icon"></svg-icon>
+  
+            </template>
+          </v-list-item> 
+
+          <v-list-item title="Agende" value="Travels" >
+            <template v-slot:prepend>
+              <svg-icon type="mdi" :path="icoclock" class="icon"></svg-icon>
+  
+            </template>
+          </v-list-item>   
+
+          <v-list-item title="Sobre nós" value="About_us" >
+            <template v-slot:prepend>
+              <svg-icon type="mdi" :path="icosbns" class="icon"></svg-icon>
+  
+            </template>
+          </v-list-item>   
+
+          <v-list-item title="Configurações" value="Config" >
+              <template v-slot:prepend>
+                <svg-icon type="mdi" :path="icoacc" class="icon"></svg-icon>
+              
+              </template>
+          </v-list-item> 
+
         </v-list>
       </v-navigation-drawer>
     </v-main>
@@ -78,6 +103,12 @@
 <script>
 import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiTextBoxSearchOutline } from '@mdi/js';
+import { mdiCog } from '@mdi/js';
+import { mdiHome } from '@mdi/js';
+import { mdiAccountCircle } from '@mdi/js';
+import { mdiClockIn } from '@mdi/js';
+import { mdiCardAccountDetailsOutline } from '@mdi/js';
+
 
 
   export default {
@@ -90,7 +121,12 @@ import { mdiTextBoxSearchOutline } from '@mdi/js';
       return {
         drawer: false,
         rail: true,
-        path: mdiTextBoxSearchOutline,
+        icosch: mdiTextBoxSearchOutline,
+        icoacc: mdiCog,
+        icohom: mdiHome,
+        icolog: mdiAccountCircle,
+        icoclock: mdiClockIn,
+        icosbns: mdiCardAccountDetailsOutline,
         
       }
       library.add(mdiTextBoxSearchOutline);
